@@ -1,0 +1,57 @@
+#stream{
+    text-align: center;
+}
+#streampara{
+text-align: center;
+color: #8888a7;
+    font-size: 16px;
+    
+}
+#bar{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 16px;
+}
+
+.barcon:hover{
+    color: royalblue;
+}
+
+hr{
+    height: 1px;
+    color: black;
+    width:90%;
+}
+
+@media screen and (min-width:650px) and (max-width:900px){
+
+#stream{
+    text-align: center;
+}
+#streampara{
+text-align: center;
+color: #8888a7;
+    font-size: 16px;
+    
+}
+#bar{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 16px;
+}
+
+.barcon:hover{
+    color: royalblue;
+}
+
+hr{
+    height: 1px;
+    color: black;
+    width:90%;
+}
+
+
+
+}

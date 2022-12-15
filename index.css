@@ -69,14 +69,22 @@
     border: none;
     height:35px;
     background-color: #7100c4;
+    /* border: 2px solid black; */
     margin-left: 30px;
     margin-top: 20px;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
     
+}
+.btn:hover{
+  background-color: violet;
+
 }
 .btn1{
     padding: 8px;
     border-radius: 30px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     height:35px;
     background-color: white;
     margin-left: 30px;
@@ -86,7 +94,7 @@
 
 a {
     text-decoration: none;
-    color: #fff;
+    /* color: #fff; */
     font-size: 14px;
 }
 
@@ -251,7 +259,7 @@ a {
 
 
   .infcar{
-    width: 70vw;
+    width: 70%;
     height: 60px;
     margin: auto;
     margin-top: 100px;
@@ -311,7 +319,11 @@ margin-bottom: 30px;
 width:150px;
 }
 
-@media screen and (min-width:510px) and (max-width:900px){
+
+
+/* medium screen */
+@media screen and (min-width:650px) and (max-width:900px){
+ 
     .car{
         width:100%;
     }
@@ -333,9 +345,32 @@ width:150px;
         width: 100%;
     }
     .infcar{
-        margin-top: 380px;
-        width: 80%;
+      /* display: none; */
+        margin-top: 480px;
+        min-width: 90%;
+        border:1px solid blue;
+        
     }
+    .carcont img{
+      width:5%;
+    }
+    .carcont{
+      list-style: none;
+      height: 100%;
+      display: flex;
+      
+      border:1px solid blue;
+      animation: scrolling 10s linear infinite;
+  }
+  @keyframes scrolling {
+      0% {
+          transform: translateX(0);
+      }
+  
+      100% {
+          transform: translateX(-100vw);
+      }
+  }
     .flickity-page-dots {
         display: none;
         position: absolute;

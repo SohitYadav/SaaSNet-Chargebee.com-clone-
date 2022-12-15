@@ -1,0 +1,60 @@
+
+.autopar{
+    width: 70%;
+    margin: auto;
+    margin-top: 150px;
+    display: flex;
+    position: relative;
+    /* border:1px solid red; */
+    justify-content: space-around;
+    
+}
+.autochild1{
+    width: 30%;
+    margin-left: 20px;
+    /* border:1px solid red */
+}
+.order_h{
+    margin-top: 20px;
+}
+
+.order_p{
+    margin-top: 10px;
+    color: #8888a7;
+}
+.li{
+    color: #8888a7;
+}
+
+.li, .link{
+    margin-top: 10px;
+}
+#learn1{
+    margin-top: 80px;
+    font-size: 16px;
+}
+.link1{
+    margin-bottom: 30px;
+}
+
+
+
+@media screen and (min-width:650px) and (max-width:900px){
+    .autopar{
+        width: 100%;
+        margin: auto;
+        margin-top: 150px;
+        display: flex;
+        position: relative;
+        border:1px solid red;
+        justify-content: space-around;
+        
+    }
+    /* #bar{
+        display: none;
+    }
+    hr{
+        display: none;
+    } */
+
+}
