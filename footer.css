@@ -17,7 +17,7 @@
 }
  .futcard{
     height:400px;
-    width:200px;
+    width:220px;
     margin: auto;
  }
  #multimedia{
@@ -47,7 +47,7 @@
     
 
 }
- @media screen and (min-width:510px) and (max-width:900px){
+ @media screen and (min-width:650px) and (max-width:900px){
     #footer{
         display: flex;
         width:210px;
@@ -63,8 +63,8 @@
       transform: translateX(5px);
    }
     .futcard{
-        height:350px;
-        width:200px;
+        height:360px;
+        width:220px;
         /* margin: auto; */
      }
      #multimedia{

@@ -1,0 +1,110 @@
+#designparent{
+    display: flex;
+    border: 1px solid red;
+    height:550px;
+    width:100%;
+}
+#designparent p{
+    color: #8888a7;
+    font-size: 16px;
+}
+
+#designchild1{
+    width:400px;
+    margin-left: 40px;
+    margin-top: 20px;
+    margin-right: 60px;
+    border: 1px solid blue;
+}
+#designchild1 h1{
+ line-height: 40px;
+ margin-left: 40px;
+}
+#designchild1 p{
+    line-height: 25px;
+    margin-left: 40px;
+    
+
+}
+ #designchild1 img{
+    width:350px;
+    height:300px
+ }
+
+ #designchild2{
+    display: grid;
+    grid-template-columns: repeat(2,350px);
+    grid-template-rows: repeat(2,250px);
+    /* border: 1px solid ; */
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-top: 20px;
+    border:1px solid yellow;
+    width:100%;
+ }
+ #designchild2 div{
+    width:270px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    height:180px;
+    border-radius: 20px;
+    padding: 20px;
+    border:1px solid red;
+ }
+ #designchild2 div:hover{
+    cursor: pointer;
+   transform: translateX(5px);
+ }
+
+ #designchild2 div a{
+    margin-left: 160px;
+ }
+
+ @media screen and (min-width:650px) and (max-width:900px){
+    #designparent{
+        display: flex;
+        border: 1px solid red;
+        /* height:90%; */
+        flex-direction: column;
+        /* border: 1px solid red; */
+        height:75%;
+        /* margin- */
+        width:100%;
+        margin: auto;
+        /* justify-content: center; */
+        /* align-items: c; */
+    }
+    #designchild1 img{
+        display: none;
+    }
+    #designchild2 div a{
+        margin-left: 120px;
+        
+     }
+     #designchild2 div{
+        width:65%;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        height:200px;
+        border-radius: 20px;
+        padding: 20px;
+        border:1px solid red;
+     }
+     #designchild2{
+        display: grid;
+        grid-template-columns: repeat(2,350px);
+        grid-template-rows: repeat(2,250px);
+        /* border: 1px solid ; */
+        margin-top: 20px;
+        /* padding-left: 20px; */
+        /* padding-top: 20px; */
+        padding:10px;
+        border:1px solid yellow;
+        width:95%;
+        /* justify-content: center; */
+        /* align-items: center; */
+        height:60%
+     }
+
+
+
+
+ }
