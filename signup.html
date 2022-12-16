@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="signup.css">
+    <style>
+        *{
+            font-family: 
+"IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
+    </style>
+</head>
+<body>
+    
+<div id="signup_parent" data-flickity='{ "wrapAround": true, "autoPlay": true, "imagesLoaded":true }'>
+
+
+
+    <!-- div for carousel -->
+
+    <div id="signup_child1">
+        <div id="sc11">
+
+        <img src="https://webstatic.chargebee.com/assets/web/543/images/signup/customers/dailius-wilson-getaccept.png" alt="">
+    </div>
+<div id="sc12">
+        <h3>Dailius Wilson</h3>
+        <p>VP Sales & Growth</p>
+    </div>
+    <div id="sc13">
+        <p>Chargebee is a fantastic solution that really meets the needs of any SaaS business. Our revenue grew 4x in 12 months, using Chargebee.</p>
+
+        <!-- get accept image -->
+        <img src="https://i.pinimg.com/originals/1d/60/44/1d60445aae155633f58ccbea81ab3ed8.png" alt="">
+        <p>BUILT FOR HYPER-GROWTH</p>
+    </div>
+
+
+
+
+
+    </div>
+
+    <div id="signup_child1">
+        <div id="sc11">
+
+        <img src="https://webstatic.chargebee.com/assets/web/543/images/signup/customers/gilles-bertaux-livestorm.png" alt="">
+    </div>
+<div id="sc12">
+        <h3>Gilles Bertaux</h3>
+        <p>Co-founder & CEO</p>
+    </div>
+    <div id="sc13">
+        <p>Using SaaS Net is also one less area we have to worry about as we scale. We know that it'll adapt to most if not any situations that'll come up in the future.</p>
+
+        <!-- get accept image -->
+        <img src="https://i.pinimg.com/originals/29/30/7a/29307a7f2f191bea4ebd6906d89beb30.png" alt="">
+        <p>ONE-STOP SOLUTION</p>
+    </div>
+
+
+
+
+
+    </div>
+
+    <div id="signup_child1">
+        <div id="sc11">
+
+        <img src="https://webstatic.chargebee.com/assets/web/543/images/signup/customers/justin-garcia-inspirecio.png" alt="">
+    </div>
+<div id="sc12">
+        <h3>Justin Garcia</h3>
+        <p>Dir. of Technology</p>
+    </div>
+    <div id="sc13">
+        <p>Our org went live with SaaS Net a week ago and man, I cannot say enough good things about their system and their support. Well worth the price.</p>
+
+        <!-- get accept image -->
+        <img src="https://i.pinimg.com/originals/e2/af/f6/e2aff6f5df2e1dd3ea19b2ec71252676.png" alt="">
+        <p>CUSTOMER-CENTRIC APPROACH</p>
+    </div>
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+<!-- div for form -->
+<div id="right">
+
+    <!-- div for logo and login -->
+
+    <div id="navb">
+        <!-- saas net logo  -->
+        <a href=".\index.html"> <img  src="https://i.pinimg.com/originals/9e/6f/8e/9e6f8e37961f6dcf89341e470cc80a5b.png" alt=""></a>
+        <a href=".\signin1.html">Login →</a>
+
+
+    </div>
+
+
+<!-- form -->
+
+
+
+    <div class="login-left">
+        <div class="login-header">
+            <h1>Create Your Sandbox Account</h1>
+            
+        </div>
+        <form action="" class="login-form">
+            <div class="login-form-content">
+                <div class="form-item">
+                    <label for="email">Enter Email</label>
+                    <input type="text" id="email">
+                </div>
+                <div class="form-item">
+                    <label for="number">Phone Number</label>
+                    <input type="number" id="password">
+                </div>
+                <div class="form-item">
+                    <div class="checkbox">
+                        <input type="checkbox" id="rem" checked>
+                        <label for="rem" class="checkboxLabel">I want to be notified about the awesome happenings* at SaaS Net</label>
+                    </div>
+                </div>
+                <button type="submit">Complete Signup →</button>
+            </div>
+            
+            
+        </form>
+
+        
+        <p style="color:gray ;font-size: 16px;">By clicking on Complete Signup, you agree to our <b> Terms </b> and you acknowledge having read our Privacy Notice</p>
+        
+        <p style="color:gray ;font-size: 13px;" > *This includes periodic newsletters, emails about usage tips, billing practices, and other communications. You can opt out anytime within the app</p>
+
+        <p style="color:gray ;font-size: 15px;">Your data hosting is <b> US Region </b></p>
+        <br>
+
+        <img id="lowimg"  src="https://webstatic.chargebee.com/assets/web/543/images/customers/logos/logos-sprite-2x.png" alt="">
+    </div>
+
+
+
+</div>
+
+
+
+
+</body>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+<script>
+var email=document.getElementById("email");
+var password=document.getElementById("password");
+let myForm=document.querySelector("form");
+
+let data=JSON.parse(localStorage.getItem("signup-data")) || [];
+
+let flag=false;
+myForm.addEventListener("submit",(e)=>{
+    e.preventDefault();
+
+ 
+//  console.log(formData)
+    if(email.value=="" ||password.value=="" || password.value.length<10 || password.value.length>10 ){
+        alert("Please Enter a Valid Email/Phone No.")
+    }else{
+        let formData={
+      
+         email: myForm.email.value,
+       password: myForm.password.value
+       } 
+       data.push(formData)
+localStorage.setItem("signup-data",JSON.stringify(data));
+alert("Sign Up Successfull");
+flag=true;
+setTimeout(function(){
+        
+        window.location.assign("signin1.html")
+    },250)
+
+    }
+    // let formData={
+      
+    //   email: myForm.email.value,
+    //   password: myForm.password.value
+    // }
+
+
+
+
+
+
+    
+    
+     
+
+   
+    
+})
+
+
+
+
+
+
+</script>
+</html>

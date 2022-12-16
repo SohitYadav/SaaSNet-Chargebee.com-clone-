@@ -108,3 +108,58 @@
 
 
  }
+
+ @media screen and (max-width:649px) and (min-width:450px) {
+   #designparent{
+      display: flex;
+      border: 1px solid red;
+      
+      flex-direction: column;
+      
+      height:95%;
+      margin-top: 100px;
+   
+      width:90%;
+      margin: auto;
+     
+  }
+  #designchild1 img{
+      display: none;
+  }
+  
+      
+   
+   #designchild2 div{
+      width:90%;
+      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+      height:200px;
+      border-radius: 20px;
+      padding: 20px;
+      border:1px solid red;
+   }
+   #designchild2{
+      display: grid;
+      grid-template-columns: repeat(1,400px);
+      grid-template-rows: repeat(4,250px);
+      
+      margin-top: 20px;
+      
+      padding:10px;
+      border:1px solid yellow;
+      width:95%;
+      
+      height:70%;
+      justify-content: center;
+   }
+   #designchild1{
+      width:70%;
+      margin-left: 65px;
+      margin-top: 20px;
+      /* margin-right: 60px; */
+      border: 1px solid blue;
+  }
+  #designchild2 div a{
+   margin-left: 120px;
+}
+
+}

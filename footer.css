@@ -94,3 +94,56 @@
     }
 
  }
+
+
+ @media screen and (max-width:649px) and (min-width:450px) {
+
+   #footer{
+      display: flex;
+      width:210px;
+      
+      height:auto;
+      border: 1px solid red;
+      padding:10px;
+      flex-direction: column;
+      margin-left: 0px;
+  }
+  #footer h2:hover , #footer p:hover{
+    cursor: pointer;
+    transform: translateX(5px);
+ }
+  .futcard{
+      height:360px;
+      width:220px;
+       border: 1px solid red; 
+      
+   }
+   #multimedia{
+      display: flex;
+      justify-content:center;
+      width:80%;
+      align-items: center;
+      flex-direction: column-reverse
+      
+   }
+   #multimedia img{
+      margin-left:23px
+   }
+   #multimedia img:hover{
+    cursor: pointer;
+    
+ }
+   #futimg{
+      display: block;
+      height:35px;
+      width:160px;
+      margin-left:43px;
+      margin-top: 30px;
+      border-radius: 9px;
+      border: 1px solid;
+      
+  
+  }
+
+
+ }

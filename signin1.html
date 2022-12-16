@@ -15,11 +15,19 @@
 </head>
 <body>
 
+<div id="nonav">
+    <div id="nonav1">
+      <a href=".\index.html"> <img src="https://i.pinimg.com/originals/9e/6f/8e/9e6f8e37961f6dcf89341e470cc80a5b.png" alt=""> </a> 
+    </div>
+    <div id="nonav2">
+        Don't have an account? <a href=".\signup.html"> Sign up → </a>
+    </div>
 
+</div>
     <div class="container1">
         <div class="login-left">
             <div class="login-header">
-                <h1>Welcome to out Application</h1>
+                <h1>Sign in to SaaS Net!</h1>
                 <p>Please login</p>
             </div>
             <form action="" class="login-form">
@@ -81,9 +89,10 @@
         </div>
     </div>
 
-
-
-
+<div id="tex">
+    <p >🌎 You are on our US data hosting centre. Switch to our EU or AU data hosting centre.
+    </p>
+</div>
 
 
 
@@ -98,4 +107,60 @@
 
     
 </body>
+
+<script>
+    var email=document.getElementById("email");
+var password=document.getElementById("password");
+let myForm=document.querySelector("form");
+    let data=JSON.parse(localStorage.getItem("signup-data")) || [];
+
+
+
+    console.log();
+myForm.addEventListener("submit",(e)=>{
+    e.preventDefault();
+    let flag=false;
+    for(let i=0;i<data.length;i++){
+
+
+if(data[i].email===email.value && data[i].password===password.value){
+    alert("Sign in Successfull");
+    setTimeout(function(){
+        
+        window.location.assign("index.html")
+    },250);
+    break;
+
+}else{
+    alert("No User Found. Please Sign Up");
+    flag=true;
+    break;
+    
+    
+    
+}
+
+
+}
+if(flag==true){
+    setTimeout(function(){
+        
+        window.location.assign("signup.html")
+    },250)
+}
+
+
+
+})
+    
+
+    
+
+    
+
+
+
+
+
+</script>
 </html>
