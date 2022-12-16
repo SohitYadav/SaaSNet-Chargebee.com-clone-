@@ -1,0 +1,153 @@
+
+ .top_bg{
+      background-color: #5b00b6;
+      /* top: 0; */
+          /* right: 15px; */
+          /* bottom: 0; */
+          /* left: 0; */
+          width: 99%;
+          /* border-radius:  100px; */
+          /* transform: rotate(-10deg); */
+          /* transform-origin: left; */
+           height: 50rem; 
+          position: absolute;
+          background: linear-gradient(106.71deg, #4300A3 11.13%, #6100BB 65.15%, #A700F1 96.91%);
+          z-index: -1; 
+          border: 1px solid red;
+ }
+#logo{
+display: flex;
+border: 1px solid red;
+/* background-color: white; */
+height: 130px;
+width: 90%;
+margin-bottom: 10px;
+/* margin-top: 90px; */
+display: block;
+}
+#logo img{
+width: 9%;
+margin: 0px 0px 0px 1000px;
+margin-top: 70px;
+/* border: 1px solid red; */
+}
+#heading{
+display: flex;
+/* margin: auto; */
+width: 100%;
+border: 1px solid yellow;
+}
+#para{
+height: auto;
+width: 30%;
+border: 1px solid red;
+font-size: 30px;
+margin-left: 200px;
+font-weight:700;
+}
+#para>h1{
+margin-bottom: -30px;
+border: 1px solid red;
+}
+h1{
+      font-size: 50px;
+      font-weight: 800;
+      color: white;
+      /* border: 1px solid red; */
+}
+h6{
+      color: white;
+      /* border: 1px solid red; */
+}
+#form{
+background: #fff;
+box-shadow: 0 4px 4px rgb(0 0 0 / 25%);
+border-radius: 4px;
+width: 30%;
+padding: 55px 25px;
+box-sizing: border-box;
+margin-left: 140px;
+border: 1px solid blue;
+
+}
+.inputs{
+      border: none;
+      outline: none;
+    padding-left: 28px;
+    margin-top: 16px;
+
+ }
+input::placeholder{
+      font-size: 13px;
+      font-family: "IBM Plex Sans",sans-serif;
+}
+.description{
+      box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  width: 100%;
+  border: 0;
+  outline: none;
+  height: 75px;
+  margin-bottom: 65px;
+  /* border: 1px solid red; */
+}
+.btn{
+      font-family: "IBM Plex Sans",sans-serif;
+    padding: 12px 25px;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+      background: linear-gradient(106.71deg,#4300a3 11.13%,#6100bb 85.15%,#a700f1 116.91%)
+}
+.btn+p{
+      font-size: 13px;
+      color: gray;
+}
+a{
+      text-decoration: none;
+       color: blue;
+      font-weight: 500;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:650px) and (max-width:900px){
+
+
+
+    #para{
+        height: auto;
+        width: 20%;
+        border: 1px solid red;
+        font-size: 30px;
+        display: none;
+        font-weight:700;
+        }
+
+        #form{
+            background: #fff;
+            box-shadow: 0 4px 4px rgb(0 0 0 / 25%);
+            border-radius: 4px;
+            width: 70%;
+            padding: 55px 25px;
+            box-sizing: border-box;
+            /* margin-left: 140px; */
+            border: 1px solid blue;
+            
+            }
+
+            #oneimg{
+                width: 90%;
+            }
+         
+        }

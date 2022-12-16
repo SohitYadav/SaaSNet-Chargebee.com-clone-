@@ -58,3 +58,35 @@
     } */
 
 }
+
+@media screen and (max-width:649px) and (min-width:450px) {
+    .autopar{
+        width: 90%;
+        margin: auto;
+        margin-top: 60px;
+        display: flex;
+        position: relative;
+        border:1px solid red;
+        /* justify-content: space-between; */
+        padding: 15px;
+        
+    }
+    .payimg{
+        width:90%;
+        height: 90%;
+        border: 1px solid;
+        margin-left: 30px;
+
+    }
+    .autopar1{
+        display: none;
+    }
+
+
+    .autochild1{
+        width: 50%;
+        margin-left: 20px;
+        border:1px solid red
+    }
+
+}

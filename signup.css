@@ -1,0 +1,411 @@
+#sc11 img{
+    height:254px;
+    /* border: 1px solid red; */
+    margin-left: 100px;
+}
+#navb a{
+    text-decoration: none;
+    color: #ff914d;
+}
+body{
+    display: flex;
+    width: 100%;
+    height: 650px;
+    /* border:1px solid #333; */
+    justify-content: space-around;
+}
+#sc11{
+    /* border: 1px solid yellow; */
+    
+    padding: 10px;
+    padding-bottom: 0px;
+    background-color: #b4b4b4;
+    height: 253px;
+}
+#sc13 img{
+    /* border: 1px solid; */
+    height:70px;
+}
+
+#signup_parent{
+    /* border: 1px solid; */
+    width:35%;
+    height:600px;
+    /* padding: 20px; */
+    /* margin: -5px; */
+}
+#sc12{
+    border: 1px solid #38039a;
+    background-color: #38039a;
+    text-align: center;
+    color: white;
+    width: 100%;
+    
+}
+#sc13{
+    border: 1px solid #500ad2;
+    height:235px;
+    background-color: #500ad2;
+    text-align: center;
+    padding: 15px;
+    color: white;
+    width:95%;
+}
+
+
+#navb{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 800px;
+    /* border: 1px solid red; */
+}
+#navb img{
+    height:35px;
+        width:160px;
+        margin-left: 0px;
+        /* margin-top: 0px; */
+        border-radius: 9px;
+}
+.login-left {
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    padding-left: 50px;
+    background-color: white;
+    /* border: 1px solid; */
+    margin: auto;
+    height: 550px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    margin-top: 50px;
+    border-radius: 20px;
+}
+.login-header {
+    /* margin-bottom: 10px; */
+    margin-top: -30px;
+    width:260px
+
+}
+.login-header h1 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    background-color: white;
+
+}
+.login-header p {
+    opacity: .7;
+}
+
+.login-form {
+    width: 100%;
+    height: 300px;
+    /* border: 1px solid blue; */
+
+   
+}
+.login-form-footer {
+    display: flex;
+    display: none;
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 90%;
+}
+
+.login-form-footer a {
+    flex: 6;
+    border: 1px solid black;
+    border-radius: 100px;
+    padding: .6rem;
+    justify-content: center;
+    display: flex;
+    color: black;
+    gap: 15px;
+    text-decoration: none;
+}
+.login-form-footer a:hover {
+    background-color: #eee;
+}
+
+.form-item label:not(.checkboxLabel) {
+    display: inline-block;
+    background-color: white;
+    margin-bottom: 10px;
+    position: absolute;
+    padding: 0 10px;
+    transform: translate(30px, -10px);
+    font-size: 14px;
+    margin-top:40px ;
+}
+input[type="text"],
+input[type="number"] {
+    border: 1px solid #dcdddd;
+    height: 40px;
+    padding: 0 2rem;
+    width: 75%;
+    outline: none;
+    transition: background .5s;
+    font-size: 18px;
+    border-radius: 10px;
+    margin-top:40px ;
+    
+}
+.checkbox {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    margin-top: 20px;
+
+}
+
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    /* accent-color: #131086; */
+}
+
+button {
+    border: none;
+    background: linear-gradient(45deg, #ff914d, #eb7126);
+    color: white;
+    width:40%;
+    margin-top:40px ;
+    border-radius: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    height: 40px;
+    cursor: pointer;
+}
+
+
+
+/*! Flickity v2.3.0
+https://flickity.metafizzy.co
+---------------------------------------------- */
+
+.flickity-enabled {
+    position: relative;
+  }
+  
+  .flickity-enabled:focus { outline: none; }
+  
+  .flickity-viewport {
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+  }
+  
+  .flickity-slider {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* draggable */
+  
+  .flickity-enabled.is-draggable {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+  }
+  
+  .flickity-enabled.is-draggable .flickity-viewport {
+    cursor: move;
+    cursor: -webkit-grab;
+    cursor: grab;
+  }
+  
+  .flickity-enabled.is-draggable .flickity-viewport.is-pointer-down {
+    cursor: -webkit-grabbing;
+    cursor: grabbing;
+  }
+  
+  /* ---- flickity-button ---- */
+  
+  .flickity-button {
+    display: none;
+    position: absolute;
+    background: hsla(0, 0%, 100%, 0.75);
+    border: none;
+    color: #333;
+  }
+  
+  
+  
+  
+  
+  /* ---- previous/next buttons ---- */
+  
+  
+  
+  /* ---- page dots ---- */
+  
+  .flickity-page-dots {
+    position: sticky;
+    /* width: 100%; */
+    /* bottom: -25px; */
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+    line-height: 1;
+    /* border: 1px solid; */
+    background-color: #500ad2;
+  }
+  
+  .flickity-rtl .flickity-page-dots { direction: rtl; }
+  
+   .flickity-page-dots .dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 8px;
+    background: rgb(5, 5, 5);
+    border-radius: 50%;
+    opacity: 0.25;
+    cursor: pointer;
+  } 
+  
+  .flickity-page-dots .dot.is-selected {
+    opacity: 1;
+  }
+  #lowimg{
+    width:550px;
+    /* border: 1px solid red; */
+  }
+
+
+  @media (max-width:900px) and (min-width:650px) {
+
+
+    #signup_parent{
+        display: none;
+    }
+    body{
+        display: block;
+        width:90%;
+        height:100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #navb{
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+        width: 90%;
+        /* border: 1px solid red; */
+    }
+#navb{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 90%;
+    /* border: 1px solid red; */
+}
+.flickity-page-dots .dot {
+    display: none;
+    width: 10px;
+    height: 10px;
+    margin: 0 8px;
+    background: rgb(5, 5, 5);
+    border-radius: 50%;
+    opacity: 0.25;
+    cursor: pointer;
+  } 
+  #lowimg{
+    width:100%;
+    /* border: 1px solid red; */
+  }
+  /* .flickity-page-dots {
+    
+    
+    display:none;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+    line-height: 1;
+    
+    background-color: #500ad2;
+  } */
+  button {
+    border: none;
+    background: linear-gradient(45deg, #ff914d, #eb7126);
+    color: white;
+    width:70%;
+    margin-top:40px ;
+    border-radius: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    height: 40px;
+    cursor: pointer;
+}
+
+  }
+
+  @media (max-width:650px) and (min-width:450px) {
+    #lowimg{
+        width:90%;
+        /* border: 1px solid red; */
+        margin-top: 30px;
+        align-items: center;
+      }
+
+
+    #signup_parent{
+        display: none;
+    }
+    body{
+        display: block;
+        width:100%;
+        min-height: 100%;
+        
+    }
+
+    #navb{
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+        width: 100%;
+        /* border: 1px solid red; */
+    }
+#navb{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 90%;
+    /* border: 1px solid red; */
+}
+.flickity-page-dots .dot {
+    display: none;
+    width: 10px;
+    height: 10px;
+    margin: 0 8px;
+    background: rgb(5, 5, 5);
+    border-radius: 50%;
+    opacity: 0.25;
+    cursor: pointer;
+  } 
+  button {
+    border: none;
+    background: linear-gradient(45deg, #ff914d, #eb7126);
+    color: white;
+    width:70%;
+    margin-top:40px ;
+    border-radius: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    height: 40px;
+    cursor: pointer;
+}
+
+
+  }

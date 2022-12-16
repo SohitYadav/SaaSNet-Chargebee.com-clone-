@@ -55,3 +55,38 @@ hr{
 
 
 }
+
+@media screen and (max-width:649px) and (min-width:450px) {
+
+    #stream{
+        width: 100%;
+        text-align: center;
+    }
+    #streampara{
+    text-align: center;
+    color: #8888a7;
+        font-size: 16px;
+        
+    }
+    #bar{
+        margin-top: 40px;
+        display: flex;
+        justify-content: space-around;
+        font-size: 16px;
+        border: 1px solid red;
+        width: 100%;
+    }
+    
+    .barcon:hover{
+        color: royalblue;
+    }
+    
+    hr{
+        height: 1px;
+        color: black;
+        width:90%;
+    }
+
+
+}
+

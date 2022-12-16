@@ -59,7 +59,7 @@
 #abf4{
     width: 20%;
     height: 400px;
-    /* border: 1px solid #333; */
+    border: 1px solid #333;
     background-color: #fff;
     border-radius: 20px;
     position: absolute;
@@ -118,4 +118,10 @@
         width: 50%;
     }
 
+}
+@media screen and (max-width:649px) and (min-width:450px) {
+    #abfut{
+        display: none;
+        
+    }
 }
