@@ -6,6 +6,8 @@
     /* border: 1px solid red; */
     padding:10px;
     margin-top: 150px;
+    background-color: #e6e6e6;
+    margin-bottom: 30px;
 }
 #footer h2:hover , #footer p:hover{
    cursor: pointer;
@@ -27,6 +29,7 @@
     width:85%;
     /* border: 1px solid red; */
     margin-bottom: 50px;
+    
     
  }
  #multimedia img{
@@ -92,6 +95,9 @@
         
     
     }
+    #footer{
+      background-color: white;
+     }
 
  }
 
@@ -103,7 +109,7 @@
       width:210px;
       
       height:auto;
-      border: 1px solid red;
+      /* border: 1px solid red; */
       padding:10px;
       flex-direction: column;
       margin-left: 0px;
@@ -115,7 +121,7 @@
   .futcard{
       height:360px;
       width:220px;
-       border: 1px solid red; 
+       /* border: 1px solid red;  */
       
    }
    #multimedia{
@@ -140,9 +146,12 @@
       margin-left:43px;
       margin-top: 30px;
       border-radius: 9px;
-      border: 1px solid;
+      /* border: 1px solid; */
       
   
+  }
+  #footer{
+   background-color: white;
   }
 
 

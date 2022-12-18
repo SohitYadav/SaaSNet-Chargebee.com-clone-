@@ -46,7 +46,7 @@
                             <label for="rem" class="checkboxLabel">Remember Me</label>
                         </div>
                     </div>
-                    <button type="submit">Sign In</button>
+                    <button id="addeven" type="submit">Sign In</button>
                 </div>
                 <div class="login-form-footer">
                     <a href="#">
@@ -99,16 +99,20 @@
 
 
 
+<!-- login-left">
+            <div class="login-header -->
 
 
-
-
+<!-- <button onclick="deleteItems()">clear</button> -->
 
 
     
 </body>
 
 <script>
+    var left=document.getElementsByClassName("login-left")
+    var lefthead=document.getElementsByClassName("login-header");
+    var btn=document.getElementById("addeven")
     var email=document.getElementById("email");
 var password=document.getElementById("password");
 let myForm=document.querySelector("form");
@@ -116,7 +120,7 @@ let myForm=document.querySelector("form");
 
 
 
-    console.log();
+    
 myForm.addEventListener("submit",(e)=>{
     e.preventDefault();
     let flag=false;
@@ -124,25 +128,34 @@ myForm.addEventListener("submit",(e)=>{
 
 
 if(data[i].email===email.value && data[i].password===password.value){
+    // alert("Sign in Successfull");
+    // setTimeout(function(){
+        
+    //     window.location.assign("index.html")
+    // },250);
+    flag=true;
+    break;
+
+}else{
+    // alert("No User Found. Please Sign Up");
+    flag=false;
+    
+    break;
+    
+    
+}
+
+
+}
+
+    if(flag==true){
     alert("Sign in Successfull");
     setTimeout(function(){
         
         window.location.assign("index.html")
-    },250);
-    break;
-
+    },250)
 }else{
     alert("No User Found. Please Sign Up");
-    flag=true;
-    break;
-    
-    
-    
-}
-
-
-}
-if(flag==true){
     setTimeout(function(){
         
         window.location.assign("signup.html")
@@ -151,9 +164,35 @@ if(flag==true){
 
 
 
-})
-    
 
+
+
+
+ })
+
+
+
+
+// function deleteItems() {
+//   localStorage.clear();
+// }
+
+
+
+    
+// if(flag==true){
+//     alert("Sign in Successfull");
+//     setTimeout(function(){
+        
+//         window.location.assign("index.html")
+//     },250)
+// }else{
+//     alert("No User Found. Please Sign Up");
+//     setTimeout(function(){
+        
+//         window.location.assign("signup.html")
+//     },250)
+// }
     
 
     

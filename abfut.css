@@ -6,7 +6,7 @@
     background-color: #4B0082;
     position: relative;
     padding: 30px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 #abf3{
     height: 80px;
@@ -14,12 +14,12 @@
     border-radius: 50%;
     margin-top: 20px;
     margin-left: 15px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 #abf1{
     width: 60%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 #tex{
@@ -35,7 +35,7 @@
     gap: 10px;
     margin-top: 30px;
     width: 60%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 #email{
     display: block;
@@ -59,7 +59,7 @@
 #abf4{
     width: 20%;
     height: 400px;
-    border: 1px solid #333;
+    /* border: 1px solid #333; */
     background-color: #fff;
     border-radius: 20px;
     position: absolute;
@@ -67,7 +67,7 @@
     left: 900px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     padding: 20px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 #num1{

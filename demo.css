@@ -82,6 +82,10 @@ input::placeholder{
     border-radius: 5px;
       background: linear-gradient(106.71deg,#4300a3 11.13%,#6100bb 85.15%,#a700f1 116.91%)
 }
+.btn:hover{
+      cursor: pointer;
+      background: #a700f1;
+}
 .btn+p{
       font-size: 13px;
       color: gray;

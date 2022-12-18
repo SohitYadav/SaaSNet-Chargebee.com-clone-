@@ -20,7 +20,7 @@
 
       <!-- website logo -->
       <div id="imgtop">
-         <img src="https://i.pinimg.com/originals/9e/6f/8e/9e6f8e37961f6dcf89341e470cc80a5b.png" alt="">
+        <a href="./index.html"> <img src="https://i.pinimg.com/originals/9e/6f/8e/9e6f8e37961f6dcf89341e470cc80a5b.png" alt=""></a>
       </div>
 
 <br><br><br><br><br>
@@ -31,26 +31,27 @@
             <h1>Elevate Your Subscription Experience with Chargebee</h1>
             <h2>Get a demo that's customized around your unique subscription workflows and pain-points.</p>
          </div>
-         <div id="form">
-            <form action="">
-               <input type="text" placeholder="First Name" class="inputs">
+         
+            <form id='form' action="">
+               <input type="text" id="name01" placeholder="First Name" class="inputs">
                <hr>
-               <input type="email" placeholder="Business Email" class="inputs">
+               <input type="email" id="email01" placeholder="Business Email" class="inputs">
                <hr>
-               <input type="text" placeholder="Mobile" class="inputs">
+               <input type="text" id="mobile01" placeholder="Mobile" class="inputs">
                <hr>
-               <input type="text" placeholder="Your website" class="inputs"> 
+               <input type="text" id="website01" placeholder="Your website" class="inputs"> 
                <hr>
                <p>Is your company headquartered in India?</p>
-               <input type="radio" name="ans" value="yes" class="inputs"><span>Yes</span>
-               <input type="radio" name="ans" value="no" class="inputs"><span>No</span><br><br>
+               <input type="radio" id="yes01" name="ans" value="yes" class="inputs"><span>Yes</span>
+               <input type="radio" id="no01" name="ans" value="no" class="inputs"><span>No</span><br><br>
                <p>What problem can Chargebee solve for you?</p>
-               <input type="text" class="description">
-               <input type="submit" value="Schedule a Demo ➡ " class="btn">
+               <input type="text" id="desc01" class="description">
+               <!-- <input type="submit"  value="Schedule a Demo ➡ " class="btn"> -->
+               <button class="btn">Schedule a Demo ➡</button>
                <p> By clicking on Schedule a Demo, you acknowledge having read our <a href=""> Privacy Notices</p></a>
                
             </form>
-         </div>
+         
 
 
       </div>
@@ -105,4 +106,52 @@
 
   
 </body>
+
+<script>
+var name=document.getElementById("name01")
+var email=document.getElementById("email01")
+var mobile=document.getElementById("mobile01")
+var website=document.getElementById("website01")
+var yyes=document.getElementById("yes01")
+var nno=document.getElementById("no01")
+var desc=document.getElementById("desc01")
+var myForm=document.getElementById("form");
+// var formdiv=document.getElementById("form");
+var btn=document.getElementsByClassName("btn")
+
+
+
+let data=JSON.parse(localStorage.getItem("demo-data")) 
+myForm.addEventListener("submit",(e)=>{
+   e.preventDefault();
+
+
+   
+      
+   
+
+   
+   localStorage.setItem("demo-data",JSON.stringify(data));
+   alert("Demo Booked Successfully. We will contact you shortly!");
+
+setTimeout(function(){
+        
+        window.location.assign("index.html")
+    },350)
+
+
+})
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
 </html>
