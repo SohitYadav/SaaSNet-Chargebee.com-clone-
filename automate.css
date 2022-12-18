@@ -46,7 +46,7 @@
         margin-top: 150px;
         display: flex;
         position: relative;
-        border:1px solid red;
+        /* border:1px solid red; */
         justify-content: space-around;
         
     }
@@ -66,7 +66,7 @@
         margin-top: 60px;
         display: flex;
         position: relative;
-        border:1px solid red;
+        /* border:1px solid red; */
         /* justify-content: space-between; */
         padding: 15px;
         
@@ -74,7 +74,7 @@
     .payimg{
         width:90%;
         height: 90%;
-        border: 1px solid;
+        /* border: 1px solid; */
         margin-left: 30px;
 
     }
@@ -86,7 +86,7 @@
     .autochild1{
         width: 50%;
         margin-left: 20px;
-        border:1px solid red
+        /* border:1px solid red */
     }
 
 }
