@@ -12,12 +12,22 @@
     <link rel="stylesheet" href="stream.css">
     <link rel="stylesheet" href="automate.css">
     <link rel="stylesheet" href="abfut.css">
+    <link rel="stylesheet" id="cssfile" href="lightmode.css">
 
     <style>
         *{
             font-family: 
 "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-        }
+        };
+        .dark-mode {
+        background: rgb(32, 31, 31);
+        color: white;
+      }
+      .light-mode {
+        background-color: white;
+        color: black;
+      }
+    
     </style>
 </head>
 <body>
@@ -31,6 +41,13 @@
         </a>
         
         <div id="left">
+            <button  id="darkmode"> <img id="darkimg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAMAAACahl6sAAAAeFBMVEX///8AAAANDQ11dXXy8vIEBAT4+Pg4ODj8/PxZWVns7OxpaWkJCQnd3d2JiYkREREqKirQ0NAsLCwzMzNeXl4iIiLHx8eysrKmpqZ8fHzl5eW9vb1CQkLT09OPj4+fn58ZGRltbW1PT0+VlZXBwcFKSkqbm5tAQEA70MFAAAAEgUlEQVR4nO2ciZaqMAyGp7IqguKG6LgyOu//hndwmasO0KQgCefke4L8p02aJmk/PgRBEARBEARBEARBEARBEARBEAShmEGcZJFludR21MBdZDNvpC4sqY0xxV2nnqN+CajtMcNe9nvqkXEXN5af9IfqGSemNgrPINqrP6TUVqEJg9fF6OTGCvtOgQylvqgNw7EKimWoPrVlKNyoaFPlDFfUtmFYj0tkKGVR24bADkplqJFNbR2cr3m5jg6FXj8tcfILvQG1fVAGnxUyOuQhcdW2+klOuhKykrKge+NIbSCQc5V75KypLYQRaWSouU9tIohUp6MjsVevQ22obYSw1esYU9sIYafX0YmdtdbFq5wFtZV6whFAx4h/zLKrz/MbHTgNjxAdakttphZAwMphXwSKIY7+c8fl7iLuBLYgU2pDdVgwHezrvcCNxd7XfQ+oQyXUplYDSU2u8M4Y7YIadQm860CA3P1Gj9rUSgY9vYIbvHN4+IIoj9rWKhALok7UxlahrTY8wDn39eEhi3dbZInQoWbU1lZQXebtjpAQo4Pz1kLEXsXa2cvba0XwDb8blA7G9yrczlJzantLAV9ErrBNGgc4HXzTeNRpmMO1GnTACuF61Z1ihUTUFhfjQosnvzDNURZYHWpCbXIx8OrJHYfnvNkBLYRpn+eEF8LT23EZ4wWe+a9mVqOIHse+go3XwXMqE3c7vMFxxgl/jCiemXxiIoRj3mgmhOHeQifxF/b84hY+Q7nAL5U3FMKvlGK2tZQKqQ1/xczZGfao14ZChtwGmI0OxBxuEdgoReG4JEZJI8slQXQPn3GYBS7gSFABzO5XsKG5QnjNlUOHmwqYsyqnmB7tOaz8Pa4hxOFUGPINqg+/zDm1GJB9nmc41YFrePsPZ2rz/2Oa/14Z8nETG91XeGLP59nYdy0hasrG4TEzTkUcuVQijDP5O2xCF7qL+AqXe2/dvaXUgVrClVW9uJUz4+EnNVL5O0cWmXC9M/GKx+EO74OeVmmYc5iZzxoQooYMPkRyIa/29BzoHaV+BL4wId9eiFcXlQwj6jgMfLmnZ0rclnObCFwXnIA2EDdxltwYbUmdHjVXrmGfEUoJ65RT/kqJ6O5bDYXgO70DVSyGv0SE4p1p/D40bjGU4pzOFMUJw161homVtL4wFf9p1RQzi9arFg99t/b1vQpn/tkP0mibnbdvX6JVQzmXhhb+I4kbPU1KaOV1U1K/EqHju51j/z2h64HWaqyN3HvLGbcXi9+qZNLmmbJ7n5+0XDXSfUFnzGfbOfGimbLKK0H7N/rQfLSjHJLXAW6/aRkjqpGPrFlH8eiajZsGt5eTUha8XKupODyhHkKPG8nrhyl9UdjP6gfiE49ZO9uq5/RTPvNppf+UAxgzaJo8sLLMCizf/B4D2Bk6Fg9nfAZunlgEGL/3MjYzKn/xkxmsOOFt+cwMlRFHp+qFGQft1+NM2eysU0FjqDftR2vGG6oEP1wvs9Q6BMHBSqNdEndmHQRBEARBEARBEARBEARBEARBEIQW+Aew+juObFsF3QAAAABJRU5ErkJggg==" alt=""> </button>
+
+
+
+
+
+<button id="lightmode"> <img id="lightimg" src="data:image/png;base64,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" alt=""> </button>
             <div class="contain">
                 <p class="head effecthov switchdark switchdark1">Product</p>
                 <div class="drop hov">
@@ -211,6 +228,7 @@
 
             <div id="right">
                 <!-- changelanguage -->
+                
 
                 <!-- link signuppage -->
                 <p class='effecthov' id="changetext"><a style="color: #ff6c36;" href=".\signin1.html">Login</a></p>
@@ -450,7 +468,7 @@
 <div id="designparent">
 
     <div id="designchild1">
-        <h1>Designed to go <br> Beyond Billing.</h1>
+        <h1 id="op">Designed to go <br> Beyond Billing.</h1>
         <p>Get the freedom to experiment, <br> launch, ans scale strategies as fast <br> as you can think of them.</p>
         <img src="https://i.pinimg.com/originals/4a/c0/d2/4ac0d240d95f07e201dd863f3b84df19.png" alt="">
     </div>
@@ -721,12 +739,12 @@
 
 
 
+<!-- https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa5Ta30NU1EGpN5KKLXzY8thOCJ3Ptt3r8UQ&usqp=CAU -->
 
 
 
 
 
-<!-- <button id="darkmode">dark mode</button> -->
 </body>
 
 
@@ -753,11 +771,48 @@
 
 
 
-
 <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
 
+<script>
+    let darkmode=document.getElementById("darkmode");
+    let lightmode=document.getElementById("lightmode");
+    let body1=document.querySelector("body");
+    var images=document.getElementsByTagName("img")
+    var css=document.getElementById("cssfile");
+    darkmode.addEventListener("click",()=>{
+        
+// darkmode.innerHTML="null"
 
+
+    
+css.setAttribute('href',"darkmode.css")
+// darkmode.innerHTML="light mode"
+        
+//             css.setAttribute('href',"styles/lightmode.css")
+// darkmode.innerHTML="dark mode"
+        
+    })
+    lightmode.addEventListener("click",function(){
+        css.setAttribute('href',"lightmode.css")
+    })
+// function darkmode(){
+//     var body=document.querySelector("body");
+//     body.className="dark-mode"
+// }
+// function lightmode(){
+//     var body=document.querySelector("body");
+//     body.className="light-mode"
+// }
+// darkmode.addEventListener("click",function(){
+//     var element=document.body
+//     element.setAttribute("class","dark-mode")
+// })
+// // lightmode.addEventListener("click",function(){
+// //     body1.className="light-mode"
+// // })
+
+</script>
 
 
 

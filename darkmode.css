@@ -1,0 +1,342 @@
+body{
+    background-color: black;
+}
+
+h2{
+    color: white;
+}
+/* img{
+    filter: grayscale(100%);
+} */
+#comlogo{
+    filter: none;
+}
+.carcell{
+    background-color:  rgb(0, 0, 0) ;
+    /* #be632a */
+    /* #CE4A7EFF */
+}
+.carcell h1,.carcell p,.carcell h3{
+    color: rgb(255, 255, 255);
+}
+#bar p:hover{
+    color: #be632a;
+}
+.flickity-enabled.is-draggable {
+    background-color: rgb(0, 0, 0)  ;
+}
+#designchild2 div{
+    background-color: gray
+}
+#designchild2 h4,#designchild2 p{
+    color: black;
+}
+div{
+    color: white;
+}
+.head1{
+    color: white;
+}
+img{
+    filter: drop-shadow(1px 2px 1px #4b0082);
+}
+#designchild1 img{
+    filter: drop-shadow(3px 3px 3px #4b0082);
+    border-radius: 10px;
+    opacity: 0.5;
+}
+.autopar img{
+    filter: drop-shadow(1px 1px 1px #4b0082);
+    opacity: 0.5;
+}
+.infcar img{
+    filter: none;
+}
+#stream{
+    color:white
+}
+#num1,#num2,#num3{
+    color: black;
+}
+#abf4{
+    background-color: gray;
+    border: none;
+}
+#footer{
+    background-color: rgb(0, 0, 0);
+}
+#footer p{
+    color:rgb(253, 247, 247)
+}
+#footer h2{
+    color: #be632a;
+}
+#abfut #text{
+    color: black;
+}
+#abfut{
+    background-color:#be632a ;
+}
+#abf1 button{
+    background-color:gray;
+    border: none;
+}
+.ceo{
+    filter: drop-shadow(0px 0px 0px #4b0082);
+}
+.drop{
+    background-color: black;
+}
+.contain p{
+    background-color: black;
+}
+.post h3{
+    color: #be632a;
+}
+
+@media screen and (min-width:650px) and (max-width:900px){
+    body{
+        background-color: black;
+    }
+    h2{
+        color: white;
+    }
+    /* img{
+        filter: grayscale(100%);
+    } */
+    #comlogo{
+        filter: none;
+    }
+    .carcell{
+        background-color:  rgb(2, 2, 2) ;
+        /* #be632a */
+        /* #CE4A7EFF */
+    }
+    .carcell h1,.carcell p,.carcell h3{
+        color: rgb(255, 255, 255);
+    }
+    #bar p:hover{
+        color: #be632a;
+    }
+    .flickity-enabled.is-draggable {
+        background-color: gray  ;
+    }
+    #designchild2 div{
+        background-color: gray
+    }
+    #designchild2 h4,#designchild2 p{
+        color: black;
+    }
+    /* div{
+        color: white;
+    } */
+    .head1{
+        color: rgb(0, 0, 0);
+    }
+    img{
+        filter: drop-shadow(1px 2px 1px #4b0082);
+    }
+    #designchild1 img{
+        filter: drop-shadow(3px 3px 3px #4b0082);
+    }
+    .autopar img{
+        filter: drop-shadow(1px 1px 1px #4b0082);
+    }
+    .infcar img{
+        filter: none;
+    }
+    #stream{
+        color:white
+    }
+    #num1,#num2,#num3{
+        color: black;
+    }
+    #abf4{
+        background-color: gray;
+        border: none;
+    }
+    #footer{
+        background-color: rgb(0, 0, 0);
+    }
+    #footer p{
+        color:rgb(253, 247, 247)
+    }
+    #footer h2{
+        color: #be632a;
+    }
+    #abfut #text{
+        color: black;
+    }
+    #abfut{
+        background-color:#be632a ;
+    }
+    #abf1 button{
+        background-color:gray;
+        border: none;
+    }
+    .ceo{
+        filter: drop-shadow(0px 0px 0px #4b0082);
+    }
+    .drop{
+        background-color: rgb(255, 250, 250);
+        color: black;
+    }
+    .contain li{
+        background-color: rgb(255, 253, 253);
+        color: black;
+    }
+    .contain p{
+        background-color: #fff;
+    }
+    .head{
+        color: black;
+    }
+    .head1{
+        color: black;
+    }
+
+
+
+
+
+}
+
+
+@media screen and (min-width:649px) and (max-width:450px){
+    body{
+        background-color: black;
+    }
+    h2{
+        color: white;
+    }
+    /* img{
+        filter: grayscale(100%);
+    } */
+    #comlogo{
+        filter: none;
+    }
+    .carcell{
+        background-color:  rgb(0, 0, 0) ;
+        /* #be632a */
+        /* #CE4A7EFF */
+    }
+    .carcell h1,.carcell p,.carcell h3{
+        color: rgb(255, 255, 255);
+    }
+    #bar p:hover{
+        color: #be632a;
+    }
+    .flickity-enabled.is-draggable {
+        background-color: gray  ;
+    }
+    #designchild2 div{
+        background-color: gray
+    }
+    #designchild2 h4,#designchild2 p{
+        color: black;
+    }
+    /* div{
+        color: white;
+    } */
+    .head1{
+        color: rgb(0, 0, 0);
+    }
+    img{
+        filter: drop-shadow(1px 2px 1px #4b0082);
+    }
+    #designchild1 img{
+        filter: drop-shadow(3px 3px 3px #4b0082);
+    }
+    .autopar img{
+        filter: drop-shadow(1px 1px 1px #4b0082);
+    }
+    .infcar img{
+        filter: none;
+    }
+    #stream{
+        color:white
+    }
+    #num1,#num2,#num3{
+        color: black;
+    }
+    #abf4{
+        background-color: gray;
+        border: none;
+    }
+    #footer{
+        background-color: rgb(0, 0, 0);
+    }
+    #footer p{
+        color:rgb(253, 247, 247)
+    }
+    #footer h2{
+        color: #be632a;
+    }
+    #abfut #text{
+        color: black;
+    }
+    #abfut{
+        background-color:#be632a ;
+    }
+    #abf1 button{
+        background-color:gray;
+        border: none;
+    }
+    .ceo{
+        filter: drop-shadow(0px 0px 0px #4b0082);
+    }
+    .drop{
+        background-color: rgb(255, 250, 250);
+        color: black;
+    }
+    .contain li{
+        background-color: rgb(255, 253, 253);
+        color: black;
+    }
+    .contain p{
+        background-color: #fff;
+    }
+    .head{
+        color: black;
+        background-color: white;
+    }
+    .head1{
+        color: black;
+        background-color: #fff;
+    }
+
+     /* effecthov switchdark switchdark1 */
+.effecthov{
+    background-color: #fff;
+}
+.switchdark{
+    background-color: #fff;
+}
+.switchdark1{
+    background-color: #fff;
+}
+.contain{
+    background-color: #fff;
+}
+#left{
+    background-color: #fff;
+}
+#droptwo{
+    margin-left: 0px;
+    color: #333;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: #fff;
+}
+#right{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    /* align-items: stretch; */
+    background-color: #fff;
+}
+.contain ul{
+    background-color: #fff;
+}
+
+}

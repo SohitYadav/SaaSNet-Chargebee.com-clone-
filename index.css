@@ -18,6 +18,62 @@
     
     
 } 
+#darkmode{
+  
+    /* padding: 8px; */
+    border-radius: 30px;
+    /* border: 1px solid black; */
+    height:35px;
+    /* background-color: white; */
+    color: white;
+    /* margin-left: 60px; */
+    margin-top: 10px;
+    border: none;
+    background-color: #000000;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+    
+}
+#darkmode:hover{
+  /* background-color: violet; */
+  cursor:pointer;
+
+}
+#darkimg{
+  width:25px;
+  height:25px;
+  border-radius: 50px;
+  filter: none;
+}
+#lightmode{
+  /* padding: 8px; */
+  border-radius: 30px;
+  /* border: 1px solid black; */
+  height:35px;
+  /* background-color: white; */
+  color: white;
+  /* margin-left: 10px; */
+  margin-top: 10px;
+  border: none;
+  background-color: #000000;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+}
+#lightmode:hover{
+  /* background-color: violet; */
+  cursor:pointer;
+
+}
+#lightimg{
+  width:25px;
+  height:25px;
+  border-radius: 50px;
+  filter: none;
+}
+
+
 #chat img{
     height: 80px;
     width:80px;
@@ -346,6 +402,36 @@ width:150px;
 /* medium screen */
 @media screen and (min-width:650px) and (max-width:900px){
  
+  #lightmode{
+    /* padding: 8px; */
+    border-radius: 30px;
+    /* border: 1px solid black; */
+    height:35px;
+    /* background-color: white; */
+    color: white;
+    /* margin-left: 10px; */
+    /* margin-top: 20px; */
+    border: none;
+    background-color: #000000;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+  }
+  #darkmode{
+    /* padding: 8px; */
+    border-radius: 30px;
+    /* border: 1px solid black; */
+    height:35px;
+    /* background-color: white; */
+    color: white;
+    margin-left: 10px;
+    /* margin-top: 20px; */
+    border: none;
+    background-color: #000000;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+  }
     .car{
         width:100%;
     }
@@ -410,7 +496,36 @@ width:150px;
 }
 @media screen and (max-width:649px) and (min-width:450px) {
 
-
+  #lightmode{
+    /* padding: 8px; */
+    border-radius: 30px;
+    /* border: 1px solid black; */
+    height:35px;
+    /* background-color: white; */
+    color: white;
+    /* margin-left: 10px; */
+    /* margin-top: 20px; */
+    border: none;
+    background-color: #000000;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+  }
+  #darkmode{
+    /* padding: 8px; */
+    border-radius: 30px;
+    /* border: 1px solid black; */
+    height:35px;
+    /* background-color: white; */
+    color: white;
+    /* margin-left: 10px; */
+    /* margin-top: 20px; */
+    border: none;
+    background-color: #000000;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+  }
   .car{
     width:100%;
 }
