@@ -1,4 +1,19 @@
 
+<h3 align="left">Project Overview:</h3>
+This project involves the creation of a clone of the Chargebee subscription management and billing platform. The goal of this endeavor is to replicate the essential features and functionalities of Chargebee, offering businesses a self-hosted alternative for subscription management, billing, and revenue recognition.
+
+
+<h3 align="left">Features:</h3>
+
+Subscription Billing: Our Chargebee clone provides businesses with the ability to set up and automate recurring billing for their subscription-based services.
+
+Invoicing: Users can generate and send invoices to customers on a regular basis, ensuring accurate and timely billing.
+
+Subscription Plans: The clone allows businesses to create and manage various subscription plans, including free trials and tiered pricing models.
+
+Responsive Design: The clone is designed to be responsive and accessible on various devices, including desktops, tablets, and mobile phones.
+User Registration and Authentication: Users can create accounts, log in, and manage their profiles. Authentication is handled securely to protect user data.
+
 <img  alt="Chargebee" src="https://i.pinimg.com/originals/f5/98/7f/f5987f01f12c0547cb3cc11a279f13dc.png">
 
 Check it out [Netlify](https://clever-granita-7cf897.netlify.app/)
