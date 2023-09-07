@@ -16,7 +16,7 @@ Responsive Design: The clone is designed to be responsive and accessible on vari
 User Registration and Authentication: Users can create accounts, log in, and manage their profiles. Authentication is handled securely to protect user data.
 <h3 align="left">Demo:</h3>
 
-Check it out [Netlify](https://clever-granita-7cf897.netlify.app/)
+Check it out [Netlify](https://saasnet.netlify.app/)
 
 <h3 align="left">Tech Stack:</h3>
 
